@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:system="clr-namespace:System;assembly=mscorlib"
+             x:Class="XamarinApp.Views.Persona"
+             Title="Persona a Json">
+    
+    <ScrollView>
+
+        <StackLayout Orientation="Vertical" VerticalOptions="Start" Padding="30">
+
+            <Entry x:Name="txtNombre" Placeholder="Nombre"/>
+
+            <DatePicker x:Name="dateFechaNac" Date="{x:Static system:DateTime.Today}" />
+            
+          
+            <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
+                
+                <StackLayout WidthRequest="100" Orientation="Vertical"  HorizontalOptions="FillAndExpand" Spacing="10">
+                    
+                    <Entry x:Name="txtNumRut" Placeholder="Rut"/>
+                    
+                </StackLayout>
+                
+                <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                    
+                    <Picker WidthRequest="10" x:Name="cboDigVer" Title="DV" SelectedIndex="0" HorizontalOptions="FillAndExpand">
+                        
+                        <Picker.Items>
+                            
+                            <x:String>0</x:String>
+                            <x:String>1</x:String>
+                            <x:String>2</x:String>
+                            <x:String>3</x:String>
+                            <x:String>4</x:String>
+                            <x:String>5</x:String>
+                            <x:String>6</x:String>
+                            <x:String>7</x:String>
+                            <x:String>8</x:String>
+                            <x:String>9</x:String>
+                            <x:String>K</x:String>
+                            
+                        </Picker.Items>
+                        
+                    </Picker>
+                    
+                </StackLayout>
+                
+            </StackLayout>
+
+            <Button Text="Guardar cambios" x:Name="btnAgregarPersona" Clicked="BtnAgregarPersona_Clicked"/>
+
+        </StackLayout>
+        
+    </ScrollView>
+    
+</ContentPage>

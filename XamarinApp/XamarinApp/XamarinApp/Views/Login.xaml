@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinApp.views.Login">
+
+    <ScrollView>
+
+         <StackLayout x:Name="layout" VerticalOptions="Start" Padding="30">
+            
+            <Label Text="Inicio de sesión"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand"
+                   FontSize="Medium"/>
+
+            <Entry x:Name="txtLogin" Placeholder="Nombre de usuario"/>
+             
+            <Entry x:Name="txtPassword" IsPassword="True" Placeholder="Contraseña"/>
+
+            <Button Text="Acceder" x:Name="btnLogin" Clicked="Button_Clicked" StyleClass="Danger"/>
+
+            <Label Text=""
+                   x:Name="lblSinConexion"
+                   TextColor="Red"
+                   HorizontalOptions="CenterAndExpand"
+                   FontSize="Medium"/>
+
+            <ActivityIndicator x:Name="Indicador" Color="Blue" />
+             
+        </StackLayout>
+        
+    </ScrollView>
+
+</ContentPage>

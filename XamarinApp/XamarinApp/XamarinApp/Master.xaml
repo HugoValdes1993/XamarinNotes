@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinApp.Master"
+             Title="Master">
+
+    <StackLayout>
+        
+        <Button Text="Ingresar Persona" x:Name="btnAgregarPersona" Clicked="BtnAgregarPersona_Clicked"/>
+        <Button Text="Sacar foto" x:Name="btnSacarFoto" Clicked="BtnSacarFoto_Clicked"/>
+        <Button Text="Trabajos" x:Name="btnTrabajos" Clicked="BtnTrabajos_Clicked"/>
+        <Button Text="Cerrar sesión" x:Name="btnLogout" VerticalOptions="EndAndExpand" Clicked="BtnLogout_Clicked"/>
+
+
+    </StackLayout>
+    
+</ContentPage>
